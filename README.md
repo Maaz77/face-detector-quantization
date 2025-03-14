@@ -32,9 +32,9 @@
 
 # Comparison of the BlazeFace and CenterFace models both in INT8 precision (.tflite)
 
-![Original image](DetectedVideos/originalvideo.mp4)
+![Original image](DetectedVideos/originalvideo.gif)
 
-![CenterFace](DetectedVideos/centerface.mp4)
+![CenterFace](DetectedVideos/centerface.gif)
 
-![BlazeFace](DetectedVideos/blazeface.mp4)
+![BlazeFace](DetectedVideos/blazeface.gif)
 
