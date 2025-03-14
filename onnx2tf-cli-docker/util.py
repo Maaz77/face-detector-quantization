@@ -298,20 +298,14 @@ def gen_calibdata_from_webcam(
 
 if __name__ == "__main__":
     
-    # gen_calibdata_from_webcam(
-    #     output_file_path='webcam_calibdata.npy',
-    #     sample_size=256,
-    #     capture_frequency_ms=200,
-    #     camera_id=0,
-    #     display_percentage=100,
-    #     normalize=False
-    # )
+    gen_calibdata_from_webcam(
+        output_file_path='webcam_calibdata.npy',
+        sample_size=256,
+        capture_frequency_ms=200,
+        camera_id=0,
+        display_percentage=100,
+        normalize=False
+    )
     
     
-
-
-
-
-
-#use the images in folder to calibrate, keep the range 
-
+    
