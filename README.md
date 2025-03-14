@@ -38,3 +38,5 @@
 
 ![BlazeFace](DetectedVideos/blazeface.gif)
 
+<video src="DetectedVideos/centerface.mp4" controls></video>
+<video src="DetectedVideos/blazeface.mp4" controls></video>
