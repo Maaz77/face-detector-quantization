@@ -30,13 +30,7 @@
 
 
 
-# Comparison of the BlazeFace and CenterFace models both in INT8 precision (.tflite)
 
-![Original image](DetectedVideos/originalvideo.mp4)
+- The videos of the detection results are in the folder `DetectedVideos`
 
-![CenterFace](DetectedVideos/centerface.mp4)
 
-![BlazeFace](DetectedVideos/blazeface.mp4)
-
-<video src="DetectedVideos/centerface.mp4" controls></video>
-<video src="DetectedVideos/blazeface.mp4" controls></video>
