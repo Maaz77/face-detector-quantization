@@ -17,12 +17,24 @@
 - the input image values to .onnx original model are range 0-255 -->
 
 - `onnx2tf -i centerface_1x3xHxW.onnx -o quantization_rslts/ -oiqt    -ois input:1,3,128,128 -cind "input" "webcam_calibdata_raw.npy" "[[[[0]] ,[[0]] ,[[0]]]]" "[[[[1]],[[1]], [[1]]]]" -kat "input"`
+    - This command must be executed in the this directory PATH = `CenterFace/onnx2tf-cli-docker`
     - This is the command used to quantize the first version of the centerface.
     - The "webcam_calibdata_raw.npy" dataset contains images captured from myselft.
     - The images in this dataset, are not normalized. 
-    - The tweak is to give the mean 0 and std 1 to the convertor command 
-    - The original `.onnx` model given to converter command has spatial resolution of input `H*w`, not `128*128`
+    - The tweak is to give the mean 0 and std 1 to the convertor command.
+    - The original `.onnx` model given to converter command has spatial resolution of input `H*w`, not `128*128`.
     - The range of image values in the calib dataset (`webcam_calibdata_raw.npy`) are from 0 - 255
     - `-kat` is to preserve the original order of axis of the input of the model, otherwise, it will be changed to `NHWC`
-    
+
+
+
+
+
+# Comparison of the BlazeFace and CenterFace models both in INT8 precision (.tflite)
+
+![Original image](DetectedVideos/originalvideo.mp4)
+
+![CenterFace](DetectedVideos/centerface.mp4)
+
+![BlazeFace](DetectedVideos/blazeface.mp4)
 
