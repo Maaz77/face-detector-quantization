@@ -33,4 +33,15 @@
 
 - The videos of the detection results are in the folder `DetectedVideos`
 
+<br><br>
+
+## BalzeFace
+
+![](DetectedVideos/blazeface.gif)
+
+<br> <br>
+
+## CenterFace
+![](DetectedVideos/centerface.gif)
+
 
