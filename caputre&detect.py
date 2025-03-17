@@ -6,6 +6,7 @@ the other one for CenterFace.
 
 from BlazeFace.webcamFaceDetection_still import process_video_file
 from CenterFace.demo_tflite import process_video
+from DBFace.dbface_infer_tflite_nhwc import video_detection
 import cv2
 import time
 import os
@@ -84,4 +85,7 @@ print("##############################################")
 print("Detecting for CenterFace...")
 process_video(model_path=centerface_model, video_path="DetectedVideos/originalvideo.mp4", detection_result_path="DetectedVideos/centerface.mp4")
 print("CenterFace detection completed.")
+
+video_detection(input_video_path="DetectedVideos/originalvideo.mp4", model_path="DBFace/Models/dbface_480x640_INT8_nhwc_integer_quant_me.tflite", output_video_path="DetectedVideos/dbface.mp4")
+print("DBFace detection completed.")
 

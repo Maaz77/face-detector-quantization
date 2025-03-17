@@ -16,6 +16,8 @@
 
 - the input image values to .onnx original model are range 0-255 -->
 
+# BlazeFace
+
 - `onnx2tf -i centerface_1x3xHxW.onnx -o quantization_rslts/ -oiqt    -ois input:1,3,128,128 -cind "input" "webcam_calibdata_raw.npy" "[[[[0]] ,[[0]] ,[[0]]]]" "[[[[1]],[[1]], [[1]]]]" -kat "input"`
     - This command must be executed in the this directory PATH = `CenterFace/onnx2tf-cli-docker`
     - This is the command used to quantize the first version of the centerface.
@@ -28,6 +30,11 @@
 
 
 
+# DBFace 
+
+- `onnx2tf -i dbface_keras_480x640_float32_nhwc.onnx -o quantization_rslts_dbface/ -oiqt   -cind "input__0" "calibdata_NHWC_480_640_DBFace.npy" "[[[[0,0,0]]]]" "[[[[1,1,1]]]]" -kat "input__0"`
+    - The command used to quantize the network.
+    - Calibration dataset is not on git because the file is big size.
 
 
 
@@ -44,4 +51,7 @@
 ## CenterFace
 ![](DetectedVideos/centerface.gif)
 
+## DBFace
+
+![](DetectedVideos/dbface.gif)
 
