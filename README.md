@@ -55,3 +55,11 @@
 
 ![](DetectedVideos/dbface.gif)
 
+
+# Deployment of the Models on the STM32N6 device
+
+| Model Name   | Extention | MACC         | Flash Size (Total) | RAM Size (Total) | Inference Time | Input Size | Landmarks | Inference Program |         
+|--------------|-----------|--------------|--------------------|------------------|----------------|------------|-----------|-------------------|
+|BlazeFace     | tflite    |   31,849,356 |      309 KB        |    641 KB        |   4.982 ms     |   128x128  |  &#10004; |   &#10004;        | 
+|CenterFace    | tflite    | 101,344,367  |     2.7 MB         |    734 KB        |   10.59ms      |   128x128  |  &#10004; |  &#10004;         |
+|DBFace        | tflite    | 2,085,454,097|    3 MB            |    13.1 MB       |    479.2ms     |   480x640  |  &#10004; | &#10004;          |
