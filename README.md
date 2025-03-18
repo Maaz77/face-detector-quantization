@@ -16,7 +16,7 @@
 
 - the input image values to .onnx original model are range 0-255 -->
 
-# BlazeFace
+# CenterFace
 
 - `onnx2tf -i centerface_1x3xHxW.onnx -o quantization_rslts/ -oiqt    -ois input:1,3,128,128 -cind "input" "webcam_calibdata_raw.npy" "[[[[0]] ,[[0]] ,[[0]]]]" "[[[[1]],[[1]], [[1]]]]" -kat "input"`
     - This command must be executed in the this directory PATH = `CenterFace/onnx2tf-cli-docker`
